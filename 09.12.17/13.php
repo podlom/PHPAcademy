@@ -1,40 +1,10 @@
 <?php
-$name = 'Диана';
-$age = 20;
-echo "Меня зовут: $name";
-echo '<br>';
-echo "Мне $age лет";
-echo '<br>';
-if (($age <=59) && ($age >18)) {
-    echo 'Вам еще работать и работать';
-    echo '<br>';
-} elseif ($age >59) {
-    echo 'Вам пора на пенсию';
-    echo '<br>';
-} elseif (($age <=17) && ($age >=0)) {
-    echo 'Вам еще рано работать';
-    echo '<br>';
-} elseif (($age <0)(!is_numeric($age))) {
-    echo 'Неизвестный возраст';
-    echo '<br>';
-}
-$day = 15;
-switch ($day) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-        echo 'Это рабочий день';
-        break;
-    case 6:
-    case 7:
-        echo 'Это выходной день';
-        break;
-    default:
-        echo 'Неизвестный день';
-        break;
-}
+
+/*
+13. Заданы две переменные: s - длина участка, который проехал автомобиль; t - время движения в часах. 
+Вывести скорость автомобиля на заданном участке в км/час и в м/сек.
+*/
+
 echo '<br>';
 $s = 150;
 $t = 3;
@@ -46,8 +16,3 @@ echo "$n км/час";
 echo '<br>';
 echo "$c м/с";
 echo '<br>';
-
-$foo = 'bar';
-$bar = 10;
-echo $$foo;
-?>
